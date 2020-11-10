@@ -27,7 +27,7 @@ end
 ------------------------------------------------
 local session = require("widgets.topbar.session")
 local taglist = require("widgets.topbar.taglist")
-local battery = require("widgets.topbar.battery")
+--local battery = require("widgets.topbar.battery")
 local clock = require("widgets.topbar.clock")
 local spotify = require("widgets.topbar.spotify")
 local launcher = require("widgets.topbar.launcher")
@@ -63,7 +63,7 @@ awful.screen.connect_for_each_screen(function(s)
             layout = wibox.layout.fixed.horizontal, 
         },
         {   -- Right 
-            widget(battery), 
+            --widget(battery), 
             widget(wibox.widget {
                 widget = wibox.container.margin,
                 top = 1, 

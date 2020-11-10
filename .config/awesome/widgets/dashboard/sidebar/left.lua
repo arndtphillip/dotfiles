@@ -12,7 +12,7 @@ local sidebarbox = require("widgets.dashboard.sidebar.sidebarbox")
 local browser = sidebarbox(beautiful.yellow, beautiful.yellow_light, "", apps.browser)
 local terminal = sidebarbox(beautiful.fg_normal, beautiful.fg_focus, "", apps.terminal)
 local fileexplorer = sidebarbox(beautiful.blue, beautiful.blue_light, "", apps.fileexplorer)
-local intellij = sidebarbox(beautiful.red, beautiful.red_light, "", "intellij-idea-ultimate-edition")
+local game = sidebarbox(beautiful.red, beautiful.red_light, "", "playonlinux")
 local spotify = sidebarbox(beautiful.green, beautiful.green_light, "", "spotify")
 
 return wibox.widget {
@@ -24,8 +24,8 @@ return wibox.widget {
                 browser, 
                 terminal, 
                 fileexplorer, 
-                intellij, 
-                spotify,
+                game, 
+		spotify,
                 spacing = dpi(8),
                 layout = wibox.layout.fixed.vertical
             }, 

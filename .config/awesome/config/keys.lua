@@ -94,7 +94,7 @@ keys.globalkeys = gears.table.join(
               end,
               {description = "restore minimized", group = "client"}),
 
-    awful.key({ modkey },            "r", function () awful.util.spawn(apps.launcher, false) end),
+    awful.key({ modkey },            "r", function () awful.spawn(apps.launcher) end),
     awful.key({ modkey }, "p",     function () awful.spawn(apps.xrandr) end),
     awful.key({ modkey, "Shift" }, "p",     function () 
         awful.spawn.easy_async_with_shell(apps.screenshot, function(stdout)

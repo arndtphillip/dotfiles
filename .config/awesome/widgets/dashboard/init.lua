@@ -15,8 +15,6 @@ local calendar = require("widgets.dashboard.calendar")
 local time = require("widgets.dashboard.time")
 local storage = require("widgets.dashboard.storage")
 local volume = require("widgets.dashboard.volume")
-local brightness = require("widgets.dashboard.brightness")
-local battery = require("widgets.dashboard.battery")
 
 local dashboard = wibox({
     visible = false, 
@@ -41,7 +39,7 @@ local dashboard = wibox({
 
         -- this only works on my resolution
         -- i didn't figure out how to solve it programmatically
-        cr:translate(0, -39)
+        cr:translate(0, -27)
         --cr:translate(0, -(beautiful.bar_height * h / aspect_h))
         
         cr:set_source_surface(img, 0, 0)
@@ -143,8 +141,6 @@ dashboard:setup {
                 {
                     drawBox({
                         volume(),
-                        brightness(), 
-                        battery,
                         spacing = 32, 
                         widget = wibox.layout.fixed.horizontal
                     }, 200, 114),

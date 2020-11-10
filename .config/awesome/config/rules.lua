@@ -37,12 +37,14 @@ rules = {
           "veromix",
           "xtightvncviewer",
           "feh",
+          "Wine"
         },
 
         -- Note that the name property shown in xprop might be set slightly after creation of the client
         -- and the name shown there might not match defined rules here.
         name = {
           "Event Tester",  -- xev.
+          "PlayOnLinux"
         },
         role = {
           "AlarmWindow",  -- Thunderbird's calendar.
